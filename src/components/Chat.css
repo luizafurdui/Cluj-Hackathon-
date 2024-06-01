@@ -1,0 +1,162 @@
+.chat-container {
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  height: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* CSS for ChatInput component */
+.chat-input {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff00;
+    border-top: 1px solid #ccc;
+  }
+
+  .chat-input form{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .chat-input button {
+    flex: 0 0 1;
+    background-color: #0084ff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: #0073e6;
+  }
+  
+  /* CSS for ChatHistory component */
+.chat-history {
+    overflow: scroll;
+    background-color: #fff;
+    display: flex;
+    flex: 1;
+    padding: 0;
+    max-height: 100%;
+    max-width: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .chat-history::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+  .chat-history ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column; 
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0;
+  }
+  
+  .chat-history li {
+    margin: 5px;
+    padding: 10px;
+    max-width: 70%; /* Adjust the maximum width as needed */
+    width: fit-content;
+    word-wrap: break-word;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .chat-history li pre{
+    white-space: pre-wrap; /* Allows text to wrap */
+    word-break: break-word; /* Optional: breaks words at the end of the line */
+
+    position: relative;
+  }
+  
+  .chat-history .user {
+    align-self: flex-start;
+    background-color: #e2e2e2;
+    color: #000;
+  }
+  
+  .chat-history .assistant {
+    align-self: flex-end;
+    background-color: #0084ff;
+    color: #fff;
+  }
+
+  .chat-history .prompt {
+    align-self: flex-start;
+    background-color: #f49300;
+    color: #000000;
+  }
+
+  .chat-history .assistant-load {
+    align-self: flex-end;
+  }
+  
+  .chat-history .user:before,
+  .chat-history .assistant:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  
+  .chat-history .user:before {
+    border-width: 0 15px 15px 0;
+    border-color: transparent #e2e2e2 transparent transparent;
+    left: -10px;
+    top: 5px;
+  }
+  
+  .chat-history .assistant:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;   
+    border-style: solid;
+    border-width: 15px 15px 0 0;
+    border-color: #0084ff transparent transparent transparent;
+    right: -10px; /* Adjust this value as necessary */
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+  
+  /* Style for the emoji buttons */
+  .emoji-button {
+    background: transparent; /* Makes the button background transparent */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    font-size: 1.2em; /* Adjusts the size of the emoji */
+    margin: 0 5px; /* Adds margin around the buttons */
+  }
+  
+  .emoji-button:focus {
+    outline: none; /* Removes the focus outline to keep the transparent style */
+  }

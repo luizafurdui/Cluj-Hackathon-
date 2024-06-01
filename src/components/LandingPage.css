@@ -1,0 +1,50 @@
+.App {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* This makes the background image fixed */
+  }
+  
+  .Content {
+    height: 100vh; /* Making the content area longer to enable scrolling */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landingHeader {
+    padding-top: 10em;
+  }
+  
+  .landingText {
+    margin: 2rem;
+    color: white; /* Make the text white */
+    text-align: center; /* Center the text */
+    margin-left: 10%; /* Add left margin */
+    margin-right: 10%; /* Add right margin */
+    font-size: 2rem; /* Increase font size */
+    
+  }
+
+  .darker-background {
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+    color: white; /* White text */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .white{
+    margin: 2rem;
+    color: white; /* Make the text white */
+    text-align: center; /* Center the text */
+    margin-left: 20%; /* Add left margin */
+    margin-right: 20%; /* Add right margin */
+    font-size: 2rem; /* Increase font size */
+  }
+
+  .Body {
+    color: rgb(0, 0, 0); /* Make the text white */
+  }

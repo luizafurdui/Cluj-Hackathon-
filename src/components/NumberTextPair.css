@@ -1,0 +1,25 @@
+.number-text-pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #2de095; /* Border color (adjust as needed) */
+    border-radius: 10px; /* Rounded edges (adjust as needed) */
+    margin: 10px;
+  }
+  
+  .number {
+    font-size: 24px; /* Adjust the size of the number */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text {
+    font-size: 18px; /* Adjust the size of the text */
+  }
+
+  .number-text-pair-container {
+    display: inline-block;
+  }
+  

@@ -1,0 +1,37 @@
+.TitleandDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Aliniere la stânga */
+  height: 100vh;
+  padding: 0 20px;
+  margin-left: 230px; /* Ajustare margine stângă */
+}
+
+.title {
+  font-size: 3em;
+  color: #112d32;
+  margin: 0.5em 0;
+  text-align: left; /* Aliniere la stânga */
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.5em;
+  color: #112d32;
+  max-width: 600px;
+  text-align: left; /* Aliniere la stânga */
+}
+.lottieAnimation{
+  margin-top:em; 
+  margin-left:20em;
+}
+.landing-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: left;
+}
+
+

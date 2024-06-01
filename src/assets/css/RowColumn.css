@@ -1,0 +1,11 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    /* Add more styling as needed */
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    /* Add more styling as needed */
+}

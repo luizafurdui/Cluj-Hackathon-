@@ -1,0 +1,11 @@
+/* Assuming the LandingPage content might have absolute positioning or a fixed height */
+/* We'll give the h2 a top margin to push it down below the LandingPage content */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    background: linear-gradient(to bottom, #fff, #88Bdbc);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

@@ -1,0 +1,10 @@
+.react-flow__node.rectangle {
+    border-radius: 25px; /* Makes the div a circle */
+    display: flex; /* Aligns the inner div centrally */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    background-color: #ffffff; /* Background color of the outer circle */
+    border: 5px solid black; /* Adds a black border */
+    box-shadow: 0 0 10px 8px #e04848;
+    padding: 10px;
+  }

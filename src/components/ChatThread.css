@@ -1,0 +1,161 @@
+/* .chat-threads-list {
+  }
+  
+  .chat-threads-list button {
+    margin: 5px 0; 
+    padding: 10px;
+    width: 100%; 
+    text-align: left; 
+ 
+  } */
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #333; /* Blackish background */
+    /*position: fixed;  To make it stay in place when scrolling */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .sidebar-button {
+    background-color: #555; /* Dark grey background */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Top and bottom padding of 10px, left and right padding of 20px */
+    margin: 10px; /* Margin around the buttons */
+    text-align: center; /* Center the text inside the button */
+    text-decoration: none; /* Remove any text decoration */
+    display: block; /* Display as block to fill the width of the sidebar */
+    width: calc(100% - 20px); /* Full width of the sidebar minus padding */
+    box-sizing: border-box; /* Include padding and border in the width */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    cursor: pointer; /* Change mouse pointer to signify button */
+  }
+  
+  .sidebar-button:hover {
+    background-color: #777; /* Lighten the button background on hover */
+  }
+
+  .new-thread-button {
+    flex: 0, 0 ,80%;
+    background-color: #4CAF50; /* Green background for distinction */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.new-thread-button:hover {
+    background-color: #66BB6A; /* Lighter green on hover */
+}
+
+.new-prompt-button {
+  background-color: #cfffad; /* Green background for distinction */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0; /* Align to the top of the sidebar */
+  z-index: 1; /* Ensures it stays above other content */
+  background-color: #333; /* Same as sidebar background for consistency */
+}
+
+.thread-list {
+  overflow-y: auto; /* Enables vertical scrolling */
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thread-list-element {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.sidebar-button-delete {
+  background-color: #ff0000c4; /* Green background for distinction */
+    border: none;
+    border-radius: 20%;
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar.closed {
+  transform: translateX(-100%); /* Adjust this value based on your sidebar width */
+}
+
+.toggle-button {
+  position: absolute;
+  left: 100%; /* Position to the right of the sidebar */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+
+  width: 20px; /* Width of the line */
+  height: 60px; /* Height of the line */
+  background-color: #333; /* Color of the line */
+  border-radius: 10px; /* Rounded corners */
+  transition: all 0.3s ease-in-out;
+
+  /* Arrow styles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Arrow head */
+.toggle-button::after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Morph into arrow pointing left when sidebar is open */
+.chat-threads-list.closed .toggle-button:hover::after {
+  border-left: 10px solid #333;
+}
+
+/* Morph into arrow pointing right when hovered */
+.chat-threads-list.open .toggle-button:hover::after {
+  border-right: 10px solid #333;
+}

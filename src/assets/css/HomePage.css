@@ -1,0 +1,15 @@
+/* Assuming the LandingPage content might have absolute positioning or a fixed height */
+/* We'll give the h2 a top margin to push it down below the LandingPage content */
+
+.skipLanding {
+    margin-top: 180vh; /* Adjust this value based on the height of your LandingPage content */
+    font-size: 1.5rem;
+    color: #333; /* Dark gray color for better readability */
+  }
+  
+  .skipLandingP {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter gray for the paragraphs */
+    margin-bottom: 1rem; /* Space between paragraphs */
+  }
+  

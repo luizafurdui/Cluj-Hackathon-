@@ -1,0 +1,18 @@
+.react-flow__node.circle {
+    width: 200px; /* Size of the outer circle */
+    height: 200px; /* Size of the outer circle */
+    border-radius: 50%; /* Makes the div a circle */
+    display: flex; /* Aligns the inner div centrally */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    background-color: #ffffff; /* Background color of the outer circle */
+    border: 5px solid black; /* Adds a black border */
+    box-shadow: 0 0 10px 8px #e04848;
+  }
+
+  .inner-circle {
+    width: 150px; /* Size of the inner circle */
+    height: 150px; /* Size of the inner circle */
+    border-radius: 50%; /* Makes the div a circle */
+    overflow: hidden; /* Ensures no overflow from the content */
+  }

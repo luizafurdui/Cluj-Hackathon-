@@ -1,0 +1,269 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --background-color: #fff; /* Light grey */
+}
+
+body {
+  background: linear-gradient(to bottom, #fff, #88Bdbc);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.main-screen{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slim-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%; /* Adjust as necessary */
+  max-width: 500px; /* Set a max-width for larger screens */
+  margin: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.big-bold-number {
+  font-size: 32px; /* Adjust the size as needed */
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+}
+
+.label-description {
+  margin-top: -50px;
+}
+
+.label-big-bold-number {
+  padding-bottom: 20px;
+}
+
+
+.scroll-container {
+  overflow: scroll;
+  padding: 0;
+  height: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Add this to your CSS file */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.slim-container h2 {
+  margin-bottom: 20px;
+}
+
+.slim-container form > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.slim-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.slim-container input[type="text"], 
+.slim-container input[type="password"], 
+.slim-container input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.slim-container input[type="text"]:focus, 
+.slim-container input[type="password"]:focus, 
+.slim-container input[type="email"]:focus {
+  border-color: #242424;
+}
+
+.slim-container button {
+  background-color: #242424;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slim-container button:hover {
+  background-color: #242424;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #254e58; /* Green */
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+  color: #fff;
+  width: 100%; /* Full width */
+  z-index: 1000; /* High z-index to overlay content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar ul li {
+  background-color: #254e58;  /* White background for button appearance */
+  color: #ffffff;  /* Text color same as navbar background for contrast */
+  border-radius: 5px;  /* Rounded corners */
+  transition: background-color 0.2s;  /* Smooth transition effect */
+  cursor: pointer;  /* Button click cursor */
+  display: flex; /* Use flexbox for centering the link */
+  justify-content: center; /* Center link horizontally */
+}
+
+.navbar ul li a { /* Target the Link component specifically */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+  width: 100%; /* Full width of the li element */
+  height: 100%; /* Full height of the li element */
+  display: flex; /* Make the link a block element */
+  padding: 5px 15px; /* Moved padding here from li */
+}
+
+.navbar ul li p { /* Target the Link component specifically */
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+  width: 100%; /* Full width of the li element */
+  height: 100%; /* Full height of the li element */
+  display: flex; /* Make the link a block element */
+  padding: 5px 15px; /* Moved padding here from li */
+  margin: 0;
+}
+
+.navbar ul li button { /* Target the Link component specifically */
+  border: none;
+  background-color: transparent; /* Inherit text color from parent */
+  color: #ffffff;
+  width: 100%; /* Full width of the li element */
+  height: 100%; /* Full height of the li element */
+  cursor: pointer;  /* Button click cursor */
+  display: flex; /* Use flexbox for centering the link */
+  justify-content: center; /* Center link horizontally */
+  align-items: center; /* Center link vertically */
+}
+
+.navbar ul li:hover {
+  background-color: #e0e0e0;  /* Slightly darker background on hover */
+  color: #112d32;
+}
+
+
+
+.navbar ul.right {
+  float: right;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* Style the div containing each label and input */
+.form-group {
+  margin-bottom: 20px; /* Adds space below each div */
+  text-align: center !important; /* Center-aligns text and elements */
+}
+
+/* Style the label */
+.form-label {
+  display: block; /* Makes the label take up the full width, pushing the input to the next line */
+}
+
+/* Style the input */
+.form-input {
+  display: block !important;
+  margin: auto !important;
+  flex: unset !important;
+}
+
+.prompt-button{
+  margin: 2px;
+}
+
+.default-prompt-button{
+  margin: 2px;
+  background-color: aqua;
+}
+
+select{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the button */
+.submit-button {
+  display: block; /* Makes the button take up the full width, pushing the next element to the next line */
+  margin: 20px auto; /* Centers the button and adds space above and below */
+}
+
+.under-navbar {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.file-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.file-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.file-item {
+  margin-bottom: 10px;
+}

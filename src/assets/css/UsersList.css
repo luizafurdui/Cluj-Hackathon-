@@ -1,0 +1,79 @@
+/* Container for the search bar and user list, with absolute positioning */
+.users-container {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  /* Styles for the search input */
+  .search-input {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    width: calc(100% - 40px); /* Adjust input width based on padding */
+    box-sizing: border-box;
+  }
+  
+  /* Styles for the list of users */
+  .users-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-height: 100px; /* Adjust based on the size of your items, enough for 3 items */
+    overflow-y: auto; /* Enables vertical scrolling */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .users-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Add this to your CSS */
+.user-info:active {
+    background-color: #d8d8d8; /* Example color: blue */
+    color: rgb(0, 0, 0); /* Change text color for better visibility */
+    cursor: pointer;
+  }
+  
+  .users-list li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style for the username and rank */
+  .user-info {
+    font-size: 14px;
+  }
+  
+
+  .toggle-users-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    width: 100px; /* Adjust width as needed */
+  }
